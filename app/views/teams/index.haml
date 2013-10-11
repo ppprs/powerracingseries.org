@@ -1,0 +1,27 @@
+.container
+  .img-header
+    = image_tag("teams_header-op.jpg")
+  .row-fluid
+    .span12
+      %h1 Teams
+      %h2 Teams. Comrades. The slightly deranged.
+  .tabbable
+    %ul.nav.nav-tabs
+      %li.active
+        %a{'href' => "#tab-2013", 'data-toggle' => "tab"} 2013
+      %li
+        %a{'href' => "#tab-past", 'data-toggle' => "tab"} Past Teams
+    .tab-content
+      #tab-2013.tab-pane.active
+        - if @teams.empty?
+          %h2 There are currently no teams officially registered for the 2013 season.
+          %h3 Check back soon!
+        %ul.thumbnails
+          - @teams.each do |team|
+            %li.team-nails
+              .thumbnail
+                = link_to image_tag( (team.image_url(:wide) || "default_person.png")), team
+                %h3= link_to team.name, team
+                %h4= team.location
+      #tab-past.tab-pane.row-fluid
+        = render :partial => "teams/past"

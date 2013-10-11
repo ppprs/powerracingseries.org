@@ -1,0 +1,84 @@
+!!!
+%html{:lang => 'en'}
+  %head
+    %title= content_for?(:title) ? yield(:title) : "Power Racing Series"
+    = stylesheet_link_tag    "application", :media => "all"
+    =# stylesheet_link_tag    params[:controller]
+    = javascript_include_tag "application"
+
+    %link{"rel" => "shortcut icon", "href" => image_path("favicon.png")}
+
+    = csrf_meta_tags
+    = yield(:head)
+  %body
+    #wrap
+      .navbar
+        .navbar-inner
+          .container
+            /%a{'class' => "btn btn-navbar", 'data-toggle' => "collapse", 'data-target' => ".nav-collapse"}
+            /  %span.icon-bar
+            /  %span.icon-bar
+            /  %span.icon-bar
+            %a.brand{:href => root_url} Power Racing Series
+            %ul.nav.pull-right
+              /%li.active
+              /  %a Why?
+              %li
+                %a{:href => "http://blog.powerracingseries.org/"}Blog
+              %li
+                = link_to "Rules", rules_path  
+              %li
+                = link_to "Teams", teams_path
+              %li
+                = link_to "Sign-Up", register_path
+              /%li
+              /  %a Sponsors
+              %li.dropdown
+                %a.dropdown-toggle{'href' => "#", 'data-toggle' => 'dropdown'}
+                  Contact
+                  /%b.caret
+                %ul.dropdown-menu
+                  %li
+                    %a.twitter{:href => "http://twitter.com/ppprs", :target => "_blank"} Twitter
+                  %li
+                    %a.facebook{:href => "https://www.facebook.com/pages/The-PowerWheel-Racing-Series/92182149052?ref=share", :target => "_blank"} Facebook
+                  %li
+                    %a.google{:href => "https://groups.google.com/forum/?fromgroups#!forum/power-racing-series", :target => "_blank"} Google
+                  %li
+                    %a{:href => "mailto:burkedesign@gmail.com"} Email Us!
+              - if person_signed_in?
+                %li
+                  = link_to "Sign Out", destroy_person_session_path, :method => :delete
+              - else
+                %li
+                  = link_to "Sign In", new_person_session_path
+            - if person_signed_in?
+              %p#user-nav.pull-right 
+                %b 
+                  Howdy #{current_person.first_name}
+                  = link_to "Manage Your Team", my_team_url
+              - if current_person.is_admin == true
+                %b= link_to "FUCKING ADMIN PAGE", admin_index_url
+      .container            
+        - if notice
+          .alert.alert-success= notice
+        - if alert
+          .alert.alert-error= alert
+        = yield
+      #push
+    #footer
+      .container
+        %p.muted.credit Copyright 2013 - Power Racing Series
+      - if Rails.env == "development"
+        %p
+          .alert= session.inspect
+          .alert= flash.inspect
+          .alert= params
+      :javascript
+        var _gaq=[["_setAccount","UA-11399168-2"],["_trackPageview"],["_trackPageLoadTime"]];   
+        //since we're in not production, set the domainName to none
+        #{Rails.env.production? ? '': "_gaq.push(['_setDomainName', 'none']);"} 
+        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+        g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
+        s.parentNode.insertBefore(g,s)}(document,"script"));
+

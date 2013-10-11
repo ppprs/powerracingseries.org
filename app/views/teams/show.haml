@@ -1,0 +1,99 @@
+.container
+  - if person_signed_in? && current_person.team == @team && request.fullpath == "/my_team"
+    - if @team.image_url(:wide).nil?
+      .alert
+        %button.close{'type' => 'button', 'data-dismiss' => 'alert'}
+          &times;
+        %strong Hey, listen!
+        You should add a team image to your Team Profile. You can do that #{link_to "here", my_team_edit_url}.
+    - if @team.people.count < 3
+      .alert
+        %button.close{'type' => 'button', 'data-dismiss' => 'alert'}
+          &times;
+        %strong Dude! Bro! Bro! Dude!
+        You need a minimum of THREE (3) people on your team. Add some mates over #{link_to "here", new_person_url}.
+    - if @team.cars.count < 1
+      .alert
+        %button.close{'type' => 'button', 'data-dismiss' => 'alert'}
+          &times;
+        %strong SRSLY? C'mon guy or gal!
+        You havn't even added a CAR yet? This is a "car" RACING SERIES. Add your ride #{link_to "here", new_car_url}.
+  .row-fluid
+    .span10
+      .row-fluid
+        .span6
+          %h1= @team.name
+          /%hr
+          %dl.well
+            /%dt Team Name
+            /%dl= @team.name
+            %dt Organization/Hackerspace
+            %dl= @team.organization_name || "None"
+            %dt Location
+            %dl= @team.location || "???"
+            %dt Website
+            %dl= link_to @team.url, @team.team_url
+        .span6
+          .team-photo
+            = image_tag (@team.image_url(:wide) || "default_person.png")
+      .row-fluid
+        .span12
+          %h4 About #{@team.name}
+          %p= @team.bio
+      .row-fluid
+        .span6
+          %h2 Team Members
+          %ul.thumbnails
+          - @team.people.each do |p|
+            %li.span5
+              .thumbnail
+                = image_tag (p.image_url(:thumb) || "default_person.png")
+                %h4= p.full_name
+                %dl.pull-right
+                  %dt
+        .span6
+          %h2 Cars
+          %ul.thumbnails
+          - @team.cars.each do |c|
+            %li.span5
+              .thumbnail
+                = image_tag (c.image_url(:thumb) || "default_car.jpg")
+                %h4 #{c.name} ##{c.number}
+                %dl.pull-right
+                  %dt
+    - if person_signed_in? && current_person.team == @team
+      .span2
+        %ul.nav.nav-list
+          %li.nav-header
+            Manage
+          %li
+            = link_to "Add Car", new_car_url
+          %li
+            = link_to "Add Person", new_person_url
+          %li
+            = link_to "Edit Team", my_team_edit_url
+          %li
+            = link_to "Edit Your Profile", edit_person_url(current_person)
+          %li.divider
+          %li
+            = link_to "Manage People", people_url
+          %li
+            = link_to "Manage Cars", cars_url
+          %li.divider
+          %li
+            Your profile is:
+            - if @team.is_visible
+              %span.label.label-success
+                Visible
+            - else
+              %span.label.label-important
+                Hidden
+          - unless @team.is_visible
+            %li
+              = link_to "Make Visible", make_visible_url
+          - if @team.cars.count > 0
+            %li.divider
+            %li
+              Congrats! Your car numbers are:
+              - @team.cars.each do |c|
+                %span.label.label-info ##{c.number}

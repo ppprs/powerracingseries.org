@@ -1,0 +1,14 @@
+.container
+  %h1 Edit '#{@team.name}'
+  %p Here you can update your team details as well as provide information that we did not ask for during signup.
+  = simple_form_for @team, :url => { :controller => "teams", :action => "update"}, :html => {:class => 'form-horizontal', :multipart => true} do |f|
+    = field_set_tag "Team Info" do
+      = f.input :name
+      = f.input :organization_name
+      = f.input :location
+      = f.input :url
+      = f.input :image, :label => "Team Image"
+      - if current_person.is_admin
+        = f.input :is_visible, :label => "Team Visibility"
+      = f.input :bio, :as => :text, :placeholder => 'Tell the world why your team is not the worst', :input_html => { :rows => 5 }
+    = f.submit 'Update!'

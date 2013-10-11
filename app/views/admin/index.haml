@@ -1,0 +1,11 @@
+%h1 Admin Console
+%hr
+
+%h2 Teams
+- @teams.each do |team|
+  .row
+    .span6
+      %h3= link_to team.name, team
+    .span2
+      = link_to "Edit", edit_team_url(team), :class => "btn btn-primary"
+

@@ -1,0 +1,15 @@
+.container
+  %h1 People
+  %p Add some peeps to your team. Get at it.
+  = simple_form_for @person, :html => {:class => 'form-horizontal', :multipart => true} do |f|
+    = field_set_tag "Person Info" do
+      = f.input :first_name, :placeholder => 'Leeroy'
+      = f.input :last_name, :placeholder => 'Jenkins'
+      = f.input :email, :placeholder => 'ljenkins@example.com'
+      = f.input :phone, :placeholder => '13125551212'
+      = f.input :location, :placeholder => 'Chicago'
+      = f.input :twitter, :placeholder => '@a_twitter_thing'
+      = f.input :personal_url, :placeholder => 'http://www.example.com/'
+      = f.input :image, :label => 'Driver photo'
+      = f.input :bio, :placeholder => 'Your life story or something short I guess', :as => :text, :input_html => { :rows => 5  }
+    = f.submit 'Add'

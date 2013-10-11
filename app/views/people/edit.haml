@@ -1,0 +1,15 @@
+.container
+  %h1 Edit #{"Your " if @person == current_person}Profile
+  %hr
+  = simple_form_for @person, :html => { :class => "form-horizontal", :multipart => true } do |f|
+    = field_set_tag "Personal Info" do
+      = f.input :first_name
+      = f.input :last_name
+      = f.input :email
+      = f.input :phone
+      = f.input :location
+      = f.input :twitter
+      = f.input :personal_url
+      = f.input :image, :label => "Driver photo"
+      = f.input :bio, :as => :text, :input_html => { :rows => 5 }
+    = f.submit 'Update'

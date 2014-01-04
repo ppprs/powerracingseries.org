@@ -62,7 +62,8 @@ GEM
       nokogiri (~> 1.5.0)
       ruby-hmac
     formatador (0.2.4)
-    haml (3.1.7)
+    haml (4.0.4)
+      tilt
     hike (1.2.1)
     i18n (0.6.1)
     journey (1.0.4)
@@ -81,6 +82,7 @@ GEM
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
+    maruku (0.7.0)
     mime-types (1.19)
     multi_json (1.5.0)
     net-scp (1.0.4)
@@ -168,6 +170,7 @@ DEPENDENCIES
   fog
   haml
   jquery-rails
+  maruku
   newrelic_rpm
   pg
   rails (= 3.2.11)

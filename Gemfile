@@ -8,6 +8,8 @@ gem 'rails', '3.2.11'
 gem 'pg'
 
 gem 'haml'
+gem 'maruku'
+
 gem 'simple_form'
 
 gem 'devise'

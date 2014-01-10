@@ -59,7 +59,7 @@ module PowerracingseriesOrg
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
-
+    config.assets.paths << "#{Rails.root}/vendor/assets/fonts"
     # Disable stupid initialization for assets
     config.assets.initialize_on_precompile = false
   end

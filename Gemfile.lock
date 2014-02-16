@@ -41,12 +41,15 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.4.0)
-    commonjs (0.2.6)
+    commonjs (0.2.7)
     devise (2.1.1)
       bcrypt-ruby (~> 3.0)
       orm_adapter (~> 0.1)
       railties (~> 3.1)
       warden (~> 1.2.1)
+    dotenv (0.9.0)
+    dotenv-rails (0.9.0)
+      dotenv (= 0.9.0)
     erubis (2.7.0)
     excon (0.13.4)
     execjs (1.4.0)
@@ -64,27 +67,27 @@ GEM
     formatador (0.2.4)
     haml (4.0.4)
       tilt
-    hike (1.2.1)
-    i18n (0.6.1)
+    hike (1.2.3)
+    i18n (0.6.9)
     journey (1.0.4)
     jquery-rails (2.1.4)
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
     json (1.7.6)
     kgio (2.7.4)
-    less (2.2.1)
-      commonjs (~> 0.2.6)
-    less-rails (2.2.3)
+    less (2.4.0)
+      commonjs (~> 0.2.7)
+    less-rails (2.4.2)
       actionpack (>= 3.1)
-      less (~> 2.2.0)
-    libv8 (3.3.10.4)
+      less (~> 2.4.0)
+    libv8 (3.16.14.3)
     mail (2.4.4)
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     maruku (0.7.0)
     mime-types (1.19)
-    multi_json (1.5.0)
+    multi_json (1.8.4)
     net-scp (1.0.4)
       net-ssh (>= 1.99.1)
     net-ssh (2.6.3)
@@ -93,7 +96,7 @@ GEM
     orm_adapter (0.1.0)
     pg (0.14.1)
     polyglot (0.3.3)
-    rack (1.4.3)
+    rack (1.4.5)
     rack-cache (1.2)
       rack (>= 0.4)
     rack-ssl (1.3.2)
@@ -119,6 +122,7 @@ GEM
     rake (10.0.3)
     rdoc (3.12)
       json (~> 1.4)
+    ref (1.0.5)
     rmagick (2.13.1)
     ruby-hmac (0.4.0)
     sass (3.2.4)
@@ -129,7 +133,7 @@ GEM
     sendgrid (1.1.0)
       json
       json
-    simple_form (2.0.4)
+    simple_form (2.1.1)
       actionpack (~> 3.0)
       activemodel (~> 3.0)
     sprockets (2.2.2)
@@ -137,18 +141,14 @@ GEM
       multi_json (~> 1.0)
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
-    therubyracer (0.10.2)
-      libv8 (~> 3.3.10)
+    therubyracer (0.12.0)
+      libv8 (~> 3.16.14.0)
+      ref
     thor (0.16.0)
-    tilt (1.3.3)
+    tilt (1.4.1)
     treetop (1.4.12)
       polyglot
       polyglot (>= 0.3.1)
-    twitter-bootstrap-rails (2.1.0)
-      actionpack (>= 3.1)
-      less-rails (~> 2.2.2)
-      railties (>= 3.1)
-      therubyracer (~> 0.10.1)
     tzinfo (0.3.35)
     uglifier (1.3.0)
       execjs (>= 0.3.0)
@@ -167,9 +167,11 @@ DEPENDENCIES
   carrierwave
   coffee-rails (~> 3.2.1)
   devise
+  dotenv-rails
   fog
   haml
   jquery-rails
+  less-rails
   maruku
   newrelic_rpm
   pg
@@ -178,6 +180,6 @@ DEPENDENCIES
   sass-rails (~> 3.2.3)
   sendgrid
   simple_form
-  twitter-bootstrap-rails
+  therubyracer
   uglifier (>= 1.0.3)
   unicorn

@@ -2,6 +2,11 @@ body {
   margin-top: 110px;
 }
 
+#dg, #blue {
+  padding-top: 0px;
+}
+
+
 #hashfixes {
   background-color: #ffffff;
   color: #ffffff;
@@ -17,6 +22,24 @@ body {
 }
 .team-member-thumbnail img {
   width: 100%;
+}
+
+@media (min-width: 1200px) {
+
+}
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+
 }
 
 
@@ -36,6 +59,25 @@ body {
   margin-top: 0px;
 }
 
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+  #headerwrap {
+    min-height: 250px;
+  }
+  #headerwrap h1 {
+    font-size: 35px;
+    margin-top: 50px;
+  }
+
+  #headerwrap.teams {
+    min-height: 150px;
+  }
+  
+  #headerwrap.rules {
+    min-height: 150px;
+  }
+
+}
 .navbar.navbar-inverse.navbar-fixed-top {
   background-color: #FFFFFF;
   border-color: #da003b;

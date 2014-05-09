@@ -61,6 +61,8 @@ body {
 
 /* Landscape phones and smaller */
 @media (max-width: 480px) {
+
+
   #headerwrap {
     min-height: 250px;
   }
@@ -130,9 +132,6 @@ body {
   min-height: 65px;
 }
 
-.navbar > .container .navbar-brand {
-  margin-left: 0;
-}
 
 .navbar-header a.navbar-brand {
   width: 138px;
@@ -143,11 +142,16 @@ body {
   background-repeat: no-repeat;
 
   margin-top: -11px;
-  margin-left: 0;
   padding-top: 90px;
   padding-bottom: 0;
 }
 
 ul.nav {
   padding-top: 0px;
+}
+@media (max-width: 768px) {
+.navbar > .container .navbar-brand {
+
+    margin-left: 15px;
+  }
 }

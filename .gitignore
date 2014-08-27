@@ -20,3 +20,5 @@
 
 # Ignore vim swap files
 *.swp
+
+.vagrant

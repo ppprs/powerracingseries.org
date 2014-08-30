@@ -18,6 +18,10 @@ PowerracingseriesOrg::Application.routes.draw do
   post  "register"      => "register#create"
   put   "register"      => "register#create"
 
+  # Videos
+  get "videos"          =>"videos#index"
+
+
   # Public team viewing
   #get   "teams"             => "teams#index"
   #get   "teams/:team_name"  => "teams#show"

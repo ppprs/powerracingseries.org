@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require jquery.Jcrop
 //= require bootstrap.min
-//= require_video
+//= require video
+//= require jquery.scrollTo.min
 //= require_tree .
 

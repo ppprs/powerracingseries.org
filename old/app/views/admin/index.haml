@@ -1,0 +1,15 @@
+.container
+  .row
+    .col-xs-12
+      %h1 Admin Console
+      %hr
+  .row
+    .col-xs-12
+      %h2 Teams
+  - @teams.each do |team|
+    .row
+      .col-xs-6
+        %h3= link_to team.name, team
+      .col-xs-6
+        = link_to "Edit", edit_team_url(team), :class => "btn btn-primary"
+

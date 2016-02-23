@@ -1,0 +1,10 @@
+.container
+  %h1 Manage your team members
+  %p Delete, Edit your peeps
+  - @people.each do |person|
+    .row-fluid
+      .span6
+        %h2= person.full_name
+      .span2
+        = link_to "Edit", edit_person_url(person), :class => "btn btn-primary"
+        = link_to "Delete", person, method: "delete", data: { confirm: 'Are you sure?' }, :class => "btn btn-danger"

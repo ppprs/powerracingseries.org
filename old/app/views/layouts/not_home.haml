@@ -1,0 +1,55 @@
+!!!
+%html{:lang => 'en'}
+  %head
+    %title= content_for?(:title) ? yield(:title) : "Power Racing Series"
+    = stylesheet_link_tag    "application", :media => "all"
+    = stylesheet_link_tag    params[:controller]
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+    = yield(:head)
+  %body
+    .navbar-wrapper
+      .container
+        .navbar.navber-inverse
+          .navbar-inner
+            %a{'class' => "btn btn-navbar", 'data-toggle' => "collapse", 'data-target' => ".nav-collapse"}
+              %span.icon-bar
+              %span.icon-bar
+              %span.icon-bar
+            %a.brand{:href => "#"} Power Racing Series
+            .nav-collapse.collapse
+              %ul.nav
+                %li.active
+                  %a{:href => "#"} Home
+                %li
+                  %a{:href => "#register"} Register
+                %li.dropdown
+                  %a.dropdown-toggle{"href" => "#", "data-toggle" => "dropdown"} Dropdown
+                  %ul.dropdown-menu
+                    %li
+                      %a{:href => "#"} THINGS
+    .carousel.slide{:id => "myCarousel"}
+      .carousel-inner
+        .item.active
+          = image_tag "test.jpg"
+          .container
+            .carousel-caption
+              %h1 Potential electical fires
+              %p.lead
+                Stuff about not dying and being innovative
+              %a.btn.btn-large.btn-primary{:href => "#"} Register today
+        .item
+          = image_tag "test2.jpg"
+          .container
+            .carousel-caption
+              %h1 Learn things
+              %p.lead
+                More stuff about learning
+              %a.btn.btn-large.btn-primary{:href => "#"} Donate today
+      %a.left.carousel-control{"href" => "#myCarousel", "data-slide" => "prev"} &lsaquo;
+      %a.right.carousel-control{"href" => "#myCarousel", "data-slide" => "next"} &rsaquo;
+    .container.marketing
+      .row
+        .span4
+          = yield
+

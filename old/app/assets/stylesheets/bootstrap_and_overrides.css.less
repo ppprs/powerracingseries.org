@@ -1,0 +1,240 @@
+
+html, body {
+  height: 100%;
+}
+
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -60px;
+}
+
+#push, #footer {
+  height: 60px;
+}
+
+#hashfix {
+  background-color: #000000;
+}
+
+#footer {
+  background-color: #f5f5f5;
+}
+
+@media (max-width: 768px) {
+  #footer {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.container .credit {
+  margin: 20px 0;
+}
+
+.navbar .navbar-inner .container {
+  width: 940px;
+}
+
+body .container {
+  width: 940px;
+}
+
+.sched {
+  text-align: center;
+}
+
+.signin {
+  max-width: 300px;
+  padding: 19px 29px 29px;
+  margin: 0 auto 20px;
+}
+
+// logo name ppprs_logo_2013.png
+
+// Set the correct sprite paths
+//@iconSpritePath: asset-path('twitter/bootstrap/glyphicons-halflings.png');
+//@iconWhiteSpritePath: asset-path('twitter/bootstrap/glyphicons-halflings-white.png');
+
+// Set the Font Awesome (Font Awesome is default. You can disable by commenting below lines)
+// Note: If you use asset_path() here, your compiled boostrap_and_overrides.css will not 
+//       have the proper paths. So for now we use the absolute path.
+//@fontAwesomeEotPath: '/assets/fontawesome-webfont.eot';
+//@fontAwesomeWoffPath: '/assets/fontawesome-webfont.woff';
+//@fontAwesomeTtfPath: '/assets/fontawesome-webfont.ttf';
+//@fontAwesomeSvgPath: '/assets/fontawesome-webfont.svg';
+
+// Font Awesome
+//@import "fontawesome";
+
+// Your custom LESS stylesheets goes here
+//
+// Since bootstrap was imported above you have access to its mixins which
+// you may use and inherit here
+//
+// If you'd like to override bootstrap's own variables, you can do so here as well
+// See http://twitter.github.com/bootstrap/less.html for their names and documentation
+//
+// Example:
+// @linkColor: #ff0000;
+
+//@logoPath: asset-path('images/ppprs_logo_2012.png');
+
+//@gridGutterWidth1200: 20px;
+
+@ppprsBlue: #0e376f;
+@ppprsRed:  #da003b;
+
+@navbarHeight: 110px;
+
+@navbarBackground: #ffffff;
+@navbarBackgroundHighlight: #333333;
+@navbarText: @ppprsBlue;
+@navbarBrandColor: @ppprsRed;
+@navbarLinkColor: @ppprsBlue;
+@navbarLinkColorHover: @ppprsRed;
+@navbarLinkColorActive: @navbarLinkColor;
+
+.navbar {
+  margin-bottom: 0;
+}
+.navbar .nav  a {
+  font-size: 18px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.navbar .nav li a {
+
+  padding-bottom: 0px;
+  padding-top: 71px;
+  padding-left: 20px;
+  padding-right: 0;
+
+  font-weight: bold;
+}
+
+.navbar .navbar-inner .container {
+  position: relative;
+}
+
+#user-nav {
+  position: absolute;
+  right: 0;
+}
+
+#main-nav {
+  clear: right;
+}
+
+.navbar .nav .active a, .navbar .nav .active a:hover {
+  background-color: transparent;
+}
+
+.navbar .navbar-inverse .navbar-fixed-top {
+  background-image: none;
+  border-radius: 0;
+
+//background: -moz-linear-gradient(top,  rgba(255,255,255,0) 52%, rgba(224,224,224,0.65) 100%); /* FF3.6+ */
+//background: -webkit-gradient(linear, left top, left bottom, color-stop(52%,rgba(255,255,255,0)), color-stop(100%,rgba(224,224,224,0.65))); /* Chrome,Safari4+ */
+//background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 52%,rgba(224,224,224,0.65) 100%); /* Chrome10+,Safari5.1+ */
+//background: -o-linear-gradient(top,  rgba(255,255,255,0) 52%,rgba(224,224,224,0.65) 100%); /* Opera 11.10+ */
+//background: -ms-linear-gradient(top,  rgba(255,255,255,0) 52%,rgba(224,224,224,0.65) 100%); /* IE10+ */
+//background: linear-gradient(to bottom,  rgba(255,255,255,0) 52%,rgba(224,224,224,0.65) 100%); /* W3C */
+//filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#a6e0e0e0',GradientType=0 ); /* IE6-9 */
+
+background: -moz-linear-gradient(top,  rgba(255,255,255,0) 52%, rgba(248,248,248,0.97) 87%, rgba(107,0,28,1) 88%, rgba(218,0,59,1) 93%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(52%,rgba(255,255,255,0)), color-stop(87%,rgba(248,248,248,0.97)), color-stop(88%,rgba(107,0,28,1)), color-stop(93%,rgba(218,0,59,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 52%,rgba(248,248,248,0.97) 87%,rgba(107,0,28,1) 88%,rgba(218,0,59,1) 93%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(255,255,255,0) 52%,rgba(248,248,248,0.97) 87%,rgba(107,0,28,1) 88%,rgba(218,0,59,1) 93%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(255,255,255,0) 52%,rgba(248,248,248,0.97) 87%,rgba(107,0,28,1) 88%,rgba(218,0,59,1) 93%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(255,255,255,0) 52%,rgba(248,248,248,0.97) 87%,rgba(107,0,28,1) 88%,rgba(218,0,59,1) 93%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#da003b',GradientType=0 ); /* IE6-9 */
+
+
+}
+
+.navbar .brand {
+  display: block;
+  width: 125px;
+  height: 0;
+  overflow: hidden;
+  background-color: transparent;
+//  background-image: url(<%= asset_data_url 'ppprs_logo_2013.png' %>);
+background-image: image-url("ppprs_logo_2013_sm.png");
+  background-repeat: no-repeat;
+
+  margin-left: 0;
+
+  padding-top: @navbarHeight;
+  padding-bottom: 0;
+}
+
+.carousel-caption h1 {
+  color: @ppprsRed;
+
+text-shadow:
+   -1px -1px 0 #fff,  
+    1px -1px 0 #fff,
+    -1px 1px 0 #fff,
+     1px 1px 0 #fff;
+}
+
+.carousel-caption h1 em {
+  color: @ppprsBlue;
+}
+
+.carousel-caption .lead {
+  //color: @ppprsBlue;
+}
+
+// PAGES IMG HEADER
+.img-header {
+  line-height: 1;
+  margin-bottom: 18px;
+}
+
+.img-header img {
+  border: 0;
+  line-height: 1;
+  vertical-align: middle;
+  horizontal-align: middle;
+  max-width: 100%;
+}
+
+.crop-preview {
+  width: 133px;
+  height: 100px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.crop-preview img {
+  max-width: none;
+}
+
+
+.team-nails {
+//  height: 279px;
+  max-width: 300px;
+}
+
+@media (min-width: 1200px) {
+  .thumbnails {
+    margin-left: -20px;
+  }
+
+  .thumbnails li {
+    margin-left: 20px;
+  }
+}
+
+#tab-past img {
+  padding-left: 15px;
+}
+
+#tab-past p {
+}

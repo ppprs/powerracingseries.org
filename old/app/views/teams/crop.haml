@@ -1,0 +1,14 @@
+.container
+  %h1 Crop Your Team Photo
+  %p Select the area of the photo you would like to be used
+  .row-fluid
+    .span10
+      =image_tag @team.image_url(:large), :id => "cropbox"
+    .span2
+      %h4 Preview
+      .crop-preview{:style=>"width:133px;height:100px;overflow:hidden"}
+        =image_tag @team.image_url(:large), :id => "preview"
+      = simple_form_for @team, :url => {:controller => "teams", :action => "update"} do |f|
+        - %w[x y w h].each do |attr|
+          = f.hidden_field "crop_#{attr}"
+        = f.submit 'Crop'

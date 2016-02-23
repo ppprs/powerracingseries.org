@@ -1,0 +1,115 @@
+# Logfile created on 2014-07-04 07:03:45 +0000 by logger.rb/31641
+[07/04/14 07:03:45 +0000 precise64 (6390)] INFO : Dispatcher: webrick
+[07/04/14 07:03:45 +0000 precise64 (6390)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[07/04/14 07:03:45 +0000 precise64 (6390)] WARN : Agent configured not to send data in this environment.
+[07/04/14 07:03:45 +0000 precise64 (6390)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 6390
+[07/04/14 07:03:45 +0000 precise64 (6390)] INFO : Agent Log at /vagrant/log/newrelic_agent.log
+[07/04/14 07:03:45 +0000 precise64 (6390)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[07/04/14 07:04:03 +0000 precise64 (6461)] INFO : Dispatcher: webrick
+[07/04/14 07:04:03 +0000 precise64 (6461)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[07/04/14 07:04:03 +0000 precise64 (6461)] WARN : Agent configured not to send data in this environment.
+[07/04/14 07:04:03 +0000 precise64 (6461)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 6461
+[07/04/14 07:04:03 +0000 precise64 (6461)] INFO : Agent Log at /vagrant/log/newrelic_agent.log
+[07/04/14 07:04:03 +0000 precise64 (6461)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[07/04/14 07:24:29 +0000 precise64 (6724)] INFO : Dispatcher: webrick
+[07/04/14 07:24:29 +0000 precise64 (6724)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[07/04/14 07:24:29 +0000 precise64 (6724)] WARN : Agent configured not to send data in this environment.
+[07/04/14 07:24:29 +0000 precise64 (6724)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 6724
+[07/04/14 07:24:29 +0000 precise64 (6724)] INFO : Agent Log at /vagrant/log/newrelic_agent.log
+[07/04/14 07:24:29 +0000 precise64 (6724)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[07/04/14 07:26:38 +0000 precise64 (1224)] INFO : Dispatcher: webrick
+[07/04/14 07:26:38 +0000 precise64 (1224)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[07/04/14 07:26:38 +0000 precise64 (1224)] WARN : Agent configured not to send data in this environment.
+[07/04/14 07:26:38 +0000 precise64 (1224)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 1224
+[07/04/14 07:26:38 +0000 precise64 (1224)] INFO : Agent Log at /vagrant/log/newrelic_agent.log
+[07/04/14 07:26:38 +0000 precise64 (1224)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[07/06/14 22:52:58 +0000 precise64 (1184)] INFO : Dispatcher: webrick
+[07/06/14 22:52:58 +0000 precise64 (1184)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[07/06/14 22:52:58 +0000 precise64 (1184)] WARN : Agent configured not to send data in this environment.
+[07/06/14 22:52:58 +0000 precise64 (1184)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 1184
+[07/06/14 22:52:58 +0000 precise64 (1184)] INFO : Agent Log at /vagrant/log/newrelic_agent.log
+[07/06/14 22:52:58 +0000 precise64 (1184)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[07/06/14 22:54:38 +0000 precise64 (1277)] INFO : Dispatcher: webrick
+[07/06/14 22:54:38 +0000 precise64 (1277)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[07/06/14 22:54:38 +0000 precise64 (1277)] WARN : Agent configured not to send data in this environment.
+[07/06/14 22:54:38 +0000 precise64 (1277)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 1277
+[07/06/14 22:54:38 +0000 precise64 (1277)] INFO : Agent Log at /vagrant/log/newrelic_agent.log
+[07/06/14 22:54:38 +0000 precise64 (1277)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[07/25/14 21:32:01 +0000 precise64 (5682)] INFO : Dispatcher: webrick
+[07/25/14 21:32:01 +0000 precise64 (5682)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[07/25/14 21:32:01 +0000 precise64 (5682)] WARN : Agent configured not to send data in this environment.
+[07/25/14 21:32:01 +0000 precise64 (5682)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 5682
+[07/25/14 21:32:01 +0000 precise64 (5682)] INFO : Agent Log at /vagrant/log/newrelic_agent.log
+[07/25/14 21:32:01 +0000 precise64 (5682)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[07/25/14 21:57:55 +0000 precise64 (1278)] INFO : Dispatcher: webrick
+[07/25/14 21:57:55 +0000 precise64 (1278)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[07/25/14 21:57:55 +0000 precise64 (1278)] WARN : Agent configured not to send data in this environment.
+[07/25/14 21:57:55 +0000 precise64 (1278)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 1278
+[07/25/14 21:57:55 +0000 precise64 (1278)] INFO : Agent Log at /vagrant/log/newrelic_agent.log
+[07/25/14 21:57:55 +0000 precise64 (1278)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[07/25/14 21:59:09 +0000 precise64 (1370)] INFO : Dispatcher: webrick
+[07/25/14 21:59:09 +0000 precise64 (1370)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[07/25/14 21:59:09 +0000 precise64 (1370)] WARN : Agent configured not to send data in this environment.
+[07/25/14 21:59:09 +0000 precise64 (1370)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 1370
+[07/25/14 21:59:09 +0000 precise64 (1370)] INFO : Agent Log at /vagrant/log/newrelic_agent.log
+[07/25/14 21:59:09 +0000 precise64 (1370)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[08/27/14 00:41:42 +0000 precise64 (903)] INFO : Dispatcher: webrick
+[08/27/14 00:41:42 +0000 precise64 (903)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[08/27/14 00:41:42 +0000 precise64 (903)] WARN : Agent configured not to send data in this environment.
+[08/27/14 00:41:42 +0000 precise64 (903)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 903
+[08/27/14 00:41:42 +0000 precise64 (903)] INFO : Agent Log at /vagrant/log/newrelic_agent.log
+[08/27/14 00:41:42 +0000 precise64 (903)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[08/27/14 00:48:31 +0000 precise64 (1202)] INFO : Dispatcher: webrick
+[08/27/14 00:48:31 +0000 precise64 (1202)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[08/27/14 00:48:31 +0000 precise64 (1202)] WARN : Agent configured not to send data in this environment.
+[08/27/14 00:48:31 +0000 precise64 (1202)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 1202
+[08/27/14 00:48:31 +0000 precise64 (1202)] INFO : Agent Log at /vagrant/log/newrelic_agent.log
+[08/27/14 00:48:31 +0000 precise64 (1202)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[08/27/14 00:51:21 +0000 precise64 (1427)] INFO : Dispatcher: webrick
+[08/27/14 00:51:21 +0000 precise64 (1427)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[08/27/14 00:51:21 +0000 precise64 (1427)] WARN : Agent configured not to send data in this environment.
+[08/27/14 00:51:21 +0000 precise64 (1427)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 1427
+[08/27/14 00:51:21 +0000 precise64 (1427)] INFO : Agent Log at /vagrant/log/newrelic_agent.log
+[08/27/14 00:51:21 +0000 precise64 (1427)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[08/27/14 04:36:32 +0000 precise64 (843)] INFO : Dispatcher: webrick
+[08/27/14 04:36:32 +0000 precise64 (843)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[08/27/14 04:36:32 +0000 precise64 (843)] WARN : Agent configured not to send data in this environment.
+[08/27/14 04:36:32 +0000 precise64 (843)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 843
+[08/27/14 04:36:32 +0000 precise64 (843)] INFO : Agent Log at /vagrant/log/newrelic_agent.log
+[08/27/14 04:36:32 +0000 precise64 (843)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[08/27/14 05:11:05 +0000 precise64 (810)] INFO : Dispatcher: webrick
+[08/27/14 05:11:05 +0000 precise64 (810)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[08/27/14 05:11:05 +0000 precise64 (810)] WARN : Agent configured not to send data in this environment.
+[08/27/14 05:11:05 +0000 precise64 (810)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 810
+[08/27/14 05:11:05 +0000 precise64 (810)] INFO : Agent Log at /vagrant/log/newrelic_agent.log
+[08/27/14 05:11:05 +0000 precise64 (810)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[08/30/14 03:53:27 +0000 precise64 (31841)] INFO : Dispatcher: webrick
+[08/30/14 03:53:27 +0000 precise64 (31841)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[08/30/14 03:53:27 +0000 precise64 (31841)] WARN : Agent configured not to send data in this environment.
+[08/30/14 03:53:27 +0000 precise64 (31841)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 31841
+[08/30/14 03:53:27 +0000 precise64 (31841)] INFO : Agent Log at /vagrant/log/newrelic_agent.log
+[08/30/14 03:53:27 +0000 precise64 (31841)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[03/26/15 03:07:45 +0000 precise64 (3845)] INFO : Dispatcher: webrick
+[03/26/15 03:07:45 +0000 precise64 (3845)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[03/26/15 03:07:45 +0000 precise64 (3845)] WARN : Agent configured not to send data in this environment.
+[03/26/15 03:07:45 +0000 precise64 (3845)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 3845
+[03/26/15 03:07:45 +0000 precise64 (3845)] INFO : Agent Log at /vagrant/log/newrelic_agent.log
+[03/26/15 03:07:45 +0000 precise64 (3845)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[03/27/15 01:55:17 +0000 precise64 (1268)] INFO : Dispatcher: webrick
+[03/27/15 01:55:17 +0000 precise64 (1268)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[03/27/15 01:55:17 +0000 precise64 (1268)] WARN : Agent configured not to send data in this environment.
+[03/27/15 01:55:17 +0000 precise64 (1268)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 1268
+[03/27/15 01:55:17 +0000 precise64 (1268)] INFO : Agent Log at /vagrant/log/newrelic_agent.log
+[03/27/15 01:55:17 +0000 precise64 (1268)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[05/09/15 04:49:08 +0000 precise64 (3818)] INFO : Dispatcher: webrick
+[05/09/15 04:49:08 +0000 precise64 (3818)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[05/09/15 04:49:08 +0000 precise64 (3818)] WARN : Agent configured not to send data in this environment.
+[05/09/15 04:49:08 +0000 precise64 (3818)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 3818
+[05/09/15 04:49:08 +0000 precise64 (3818)] INFO : Agent Log at /vagrant/log/newrelic_agent.log
+[05/09/15 04:49:08 +0000 precise64 (3818)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[05/09/15 04:52:55 +0000 precise64 (3993)] INFO : Dispatcher: webrick
+[05/09/15 04:52:55 +0000 precise64 (3993)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[05/09/15 04:52:55 +0000 precise64 (3993)] WARN : Agent configured not to send data in this environment.
+[05/09/15 04:52:55 +0000 precise64 (3993)] INFO : New Relic Ruby Agent 3.5.4.34 Initialized: pid = 3993
+[05/09/15 04:52:55 +0000 precise64 (3993)] INFO : Agent Log at /vagrant/log/newrelic_agent.log
+[05/09/15 04:52:55 +0000 precise64 (3993)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data

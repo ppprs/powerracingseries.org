@@ -1,0 +1,10 @@
+.container
+  %h1 Add a Car
+  %p Whurr! Whurr! Note: Your car number needs to be less than or equal to Ninety-Nine Thousand Nine Hundred and Ninety-Nine, yet also moar than Zero. Blame Patrick. Bonus points for primes that are also binary palindromes.
+  = simple_form_for @car, :html => { :class => 'form-horizontal', :multipart => true } do |f|
+    = field_set_tag "Car Info" do
+      = f.input :name, :placeholder => "RubberShredder"
+      = f.input :number,  :input_html => { :value => '1' }, :label => "Car number"
+      = f.input :image, :label => "Car photo"
+      = f.input :description, :placeholder => "What makes this ride different? Would xzibit want to pimp it, or just buy you a new one like in that episode where the kid had the two half-cars welded together?", :as => :text, :input_html => { :rows => 10 }
+      = f.submit 'Add'

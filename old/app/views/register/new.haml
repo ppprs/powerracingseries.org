@@ -1,0 +1,31 @@
+.container
+  %h1 2015 Power Racing Series Registration
+  %p.lead
+    We're going to need TWO (2) [deux] areas of info to get you started! Keep in mind, not all fields are required but the more you supply the better we will like you.
+  %p
+    Please keep in mind that any personal information ( i.e. Email Addresses, Phone Numbers, Home Addresses, etc ) will remain private. Your private information will only be used by Power Racing Series for official communications purposes, record keeping, and possibly assisting you in registration for the official events hosting our glorious races.
+.white
+  .container
+    .row
+      .col-xs-12
+        = simple_form_for @team, :url => {:controller => "register", :action => "create"}, :html => {:class => 'form-horizontal', "role" => "form"}, :defaults => { :input_html => { :class => "form-control"}}  do |f|
+          = field_set_tag "Team Info" do
+            = f.input :name, :placeholder => 'Super Team 9000'
+            = f.input :organization_name, :placeholder => 'Best Hackerspace Ever'
+            = f.input :location, :placeholder  => 'Realtown, USA'
+            = f.input :url
+            /= f.input :photo_url
+            /= f.input :video_url
+          = field_set_tag "Team Captain Info" do
+            = simple_fields_for @captain, :defaults => { :input_html => { :class => "form-control"}} do |p|
+              = p.input :first_name, :placeholder => 'Leeroy'
+              = p.input :last_name, :placeholder => 'Jenkins'
+              = p.input :email, :placeholder => 'ljenkins@example.com'
+              = p.input :password, :required => true
+              = p.input :phone, :placeholder => '13125551212'
+              = p.input :location, :placeholder => 'Chicago'
+              = p.input :twitter, :placeholder => '@a_twitter_thing'
+              = p.input :personal_url, :placeholder => 'http://www.example.com/'
+              /= p.input :photo_url, :placeholder => 'http://www.example.com/ur_face.jpg'
+              = p.input :bio, :placeholder => 'Your life story or something short I guess', :as => :text, :input_html => { :rows => 5  }
+          = f.button :submit

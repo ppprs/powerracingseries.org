@@ -1,0 +1,100 @@
+!!!
+%html{:lang => 'en'}
+  %head
+    %title= content_for?(:title) ? yield(:title) : "Power Racing Series"
+    = stylesheet_link_tag    "application", :media => "all"
+    =# stylesheet_link_tag    params[:controller]
+    = javascript_include_tag "application"
+    %meta{"name" => "viewport", "content" => "width=device-width, initial-scale=0.8, maximum-scale=1.0"}
+    %link{"rel" => "shortcut icon", "href" => image_path("favicon.png")}
+
+    = csrf_meta_tags
+    = yield(:head)
+  %body
+    .navbar.navbar-inverse.navbar-fixed-top
+      .container
+        .navbar-header
+          %button.navbar-toggle{"type" => "button", "data-toggle" => "collapse", "data-target" => ".navbar-collapse"}
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+          %a.navbar-brand{:href => root_url} Power Racing Series
+        .navbar-collapse.collapse
+          %ul.nav.navbar-nav.navbar-right
+            %li.active
+              = link_to "HOME", home_path
+            %li
+              = link_to "RULES", rules_path  
+            %li
+              = link_to "TEAMS", teams_path
+            - unless person_signed_in?
+              %li
+                = link_to "SIGN UP", register_path
+            /%li
+            /  %a Sponsors
+            %li
+              = link_to "VIDEOS", videos_path
+            %li
+              %a{:href => "mailto:jim@powerracingseries.org"} CONTACT
+            %li
+              %a{:href => "http://blog.powerracingseries.org/"}BLOG
+            - if person_signed_in?
+              %li
+                = link_to "MY TEAM", my_team_url 
+              %li
+                = link_to "LOG OUT", destroy_person_session_path, :method => :delete
+            - else
+              %li
+                = link_to "LOG IN", new_person_session_path
+    - if notice
+      .alert.alert-success= notice
+    - if alert
+      .alert.alert-error= alert
+    - if person_signed_in? and current_person.is_admin
+      #user-bar
+        .container
+          .row.user-bar
+            .xs-col-12
+              %p
+                %h4
+                  %b= link_to "FUCKING ADMIN PAGE", admin_index_url
+    = yield
+    #f
+      .container
+        .row.centered
+          %a{:href => "https://twitter.com/ppprs"}
+            <i class="fa fa-twitter-square"></i>
+          %a{:href=>"https://www.facebook.com/pages/The-PowerWheel-Racing-Series/92182149052?ref=share"}
+            <i class="fa fa-facebook-square"></i>
+          %a{:href => "http://blog.powerracingseries.org/"}
+            <i class="fa fa-tumblr-square"></i>
+          %a{:href => "http://vimeo.com/user3647833"}
+            <i class="fa fa-vimeo-square"></i>
+          %a{:href => "https://www.github.com/ppprs"}
+            <i class="fa fa-github-square"></i>
+          %a{:href => "mailto:jim@powerracingseries.org"}
+            <i class="fa fa-envelope"></i>
+        .row.centered
+          %p Copyright 2015 - Power Racing Series
+
+    :javascript
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-11399168-2', 'powerwheelracingseries.org');
+      ga('send', 'pageview');
+
+  -#
+    #push
+    #footer
+      .container
+        %p.muted.credit Copyright 2014 - Power Racing Series
+      - if Rails.env == "development"
+        %p
+          .alert= session.inspect
+          .alert= flash.inspect
+          .alert= params
+
+

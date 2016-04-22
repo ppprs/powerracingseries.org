@@ -36,20 +36,31 @@ Moderation queue
 class League(models.Model):
     name = models.CharField(max_length=50)
 
+    def __str__(self):
+        return self.name
 
 class Season(models.Model):
     name = models.CharField(max_length=50)
     league = models.ForeignKey(League)
+
+    def __str__(self):
+        return "{} season {}".format(self.league, self.name)
 
 
 class Event(models.Model):
     name = models.CharField(max_length=100)
     season = models.ForeignKey(Season)
 
+    def __str__(self):
+        return "{} event {}".format(self.season, self.name)
+
 
 class Race(models.Model):
     name = models.CharField(max_length=100)
     event = models.ForeignKey(Event)
+
+    def __str__(self):
+        return "{} race {}".format(self.event, self.name)
 
 
 class Team(models.Model):
@@ -57,17 +68,25 @@ class Team(models.Model):
     league = models.ForeignKey(League)
     owner = models.ForeignKey('Person')
 
+    def __str__(self):
+        return "{} team {} ({})".format(self.league, self.name, self.owner)
+
 
 class Car(models.Model):
     name = models.CharField(max_length=100)
     number = models.CharField(max_length=10)
     team = models.ForeignKey(Team)
 
+    def __str__(self):
+        return "{}(#{}) by {}".format(self.name, self.number, self.team)
+
 
 class Person(models.Model):
     first_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=50)
 
+    def __str__(self):
+        return "{} {}".format(self.first_name, self.last_name)
 
 
 # class Car(models.Model):

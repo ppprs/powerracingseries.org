@@ -12,3 +12,8 @@ ImageMagick Setup on OS X
      ln -s libMagick++-Q16.7.dylib   libMagick++.dylib
      ln -s libMagickCore-Q16.7.dylib libMagickCore.dylib
      ln -s libMagickWand-Q16.7.dylib libMagickWand.dylib
+
+
+== Stuff
+
+to run the dev server on a vm, "rails server"

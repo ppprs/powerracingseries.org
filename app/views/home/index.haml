@@ -2,7 +2,7 @@
   .container
     .row.centered
       .col-lg-8.col-lg-offset-2
-        %h1
+        %h1{:style=>"text-shadow: 0px 0px 50px #000"}
           BUILD AND RACE AN
           %b Autonomous Car
         %p
@@ -49,7 +49,8 @@
               %br
               %em SEPTEMBER 17
               %br
-              %p World’s Most Affordable Autonomous Race
+              World’s Most Affordable Autonomous&nbsp;Race
+              %br
               = link_to "AVC Sparkfun 2016", "https://avc.sparkfun.com/"
       .col-sm-3
         .pricing-option
@@ -85,6 +86,13 @@
               %em OCTOBER 1-2
               %br
               = link_to "World Maker Faire New York", "http://makerfaire.com/"
+          %ul
+            %li
+              %strong Pittsburgh, PA
+              %br
+              %em OCTOBER 15-16
+              %br
+              = link_to "Maker Faire Pittsburgh", "http://makerfairepittsburgh.com/"
       .col-sm-3
         .pricing-option
           .pricing-top

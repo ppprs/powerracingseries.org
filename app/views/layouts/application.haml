@@ -24,7 +24,8 @@
             %li.active
               = link_to "HOME", home_path
             %li
-              = link_to "RULES", rules_path  
+              %a{:href => "/assets/2016PPPRSRules.pdf"} RULES
+              -#= link_to "RULES", rules_path
             %li
               = link_to "TEAMS", teams_path
             - unless person_signed_in?
@@ -36,11 +37,13 @@
               = link_to "VIDEOS", videos_path
             %li
               %a{:href => "mailto:jim@powerracingseries.org"} CONTACT
+            -#%li
+              %a{:href => ""} DONATE
             %li
               %a{:href => "http://blog.powerracingseries.org/"}BLOG
             - if person_signed_in?
               %li
-                = link_to "MY TEAM", my_team_url 
+                = link_to "MY TEAM", my_team_url
               %li
                 = link_to "LOG OUT", destroy_person_session_path, :method => :delete
             - else
@@ -96,5 +99,3 @@
           .alert= session.inspect
           .alert= flash.inspect
           .alert= params
-
-
